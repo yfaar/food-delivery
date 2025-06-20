@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #b30000">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Admin Dashboard</a>
+      <div class="dropdown ms-auto">
+        <a class="nav-link dropdown-toggle d-flex align-items-center text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="images/profile.png" alt="Avatar" class="rounded-circle" width="40" height="40">
+          <span class="ms-2">Fawa</span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PROFILE SECTION -->
+  <div class="admin-profile">
+    <div class="profile-container">
+      <div class="admin-header">
+        <img src="images/profile.png" alt="Admin Avatar">
+        <div>
+         <h2 class="admin-name">NURFARAH BINTI KHAIRUDIN</h2>
+         <p class="admin-role">Super Admin</p>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box">
+          <h6>Email</h6>
+          <p>fawaaahain@example.com</p>
+        </div>
+        <div class="info-box">
+          <h6>Joined</h6>
+          <p>January 2024</p>
+        </div>
+        <div class="info-box">
+          <h6>Role</h6>
+          <p>Super Admin</p>
+        </div>
+        <div class="info-box">
+          <h6>Last Login</h6>
+          <p>19 June 2025</p>
+        </div>
+        <div class="info-box">
+          <h6>Managed Orders</h6>
+          <p>245</p>
+        </div>
+        <div class="info-box">
+          <h6>Permissions</h6>
+          <p>Full Access</p>
+        </div>
+      </div>
+
+      <div class="btn-group-action">
+        <a href="dashboard.html" class="btn btn-outline-dark">Back to Dashboard</a>
+        <a href="edit-profile.html" class="btn btn-warning">Edit Profile</a>
+      </div>
+
+      <div class="activity-log">
+        <h5>Recent Activity</h5>
+        <ul>
+          <li>Approved new vendor registration - 10 mins ago</li>
+          <li>Updated delivery status for Order #1023 - 1 hour ago</li>
+          <li>Generated sales report - 2 hours ago</li>
+          <li>Changed settings for user roles - Yesterday</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

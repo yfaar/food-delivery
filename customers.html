@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Profiles - Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Top Navigation Bar -->
+  <nav class="navbar navbar-expand-lg border-bottom">
+    <div class="container-fluid">
+      <button class="btn border-0 text-white fs-4" id="menu-toggle" style="background: none;">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="dropdown">
+        <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <img src="images/profile.png" alt="Profile Avatar" class="rounded-circle me-2" width="40">
+          <span>Fawa</span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="adminprofile.html">Profile</a></li>
+          <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sidebar + Main Content Wrapper -->
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-dark text-white p-3 min-vh-100" style="width: 250px;" id="sidebar">
+      <div class="sidebar-heading">
+        <img src="images/profile.png" alt="Profile Avatar" class="rounded-circle me-2" width="50">
+        <span>fawa<br><small>2024266354</small></span>
+      </div>
+      <hr class="text-white">
+      <ul class="nav flex-column mt-4">
+        <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        <li class="nav-item"><a href="orders.html" class="nav-link">Orders</a></li>
+        <li class="nav-item"><a href="menu.html" class="nav-link">Menu Management</a></li>
+        <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+        <li class="nav-item"><a href="customers.html" class="nav-link active">Customers</a></li>
+      </ul>
+    </div>
+    
+    <!-- Main Content Area -->
+    <div id="page-content" class="container-fluid py-4">
+      <h2 class="mb-4">Customer Profiles</h2>
+      <div class="row">
+        <!-- Customer 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body text-center">
+              <img src="images/profile1.png" alt="Customer Avatar" class="rounded-circle mb-3" width="80">
+              <h5 class="card-title">Mohd Mazhan</h5>
+              <p class="text-muted">New customer</p>
+              <a href="profilecust1.html" class="btn btn-primary btn-sm">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body text-center">
+              <img src="images/profile5.png"  alt="Customer Avatar" class="rounded-circle mb-3" width="80">
+              <h5 class="card-title">Siti Hamizah</h5>
+              <p class="text-muted">Regular Customer</p>
+              <a href="profilecust5.html" class="btn btn-primary btn-sm">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body text-center">
+              <img src="images/profile2.png" alt="Customer Avatar" class="rounded-circle mb-3" width="80">
+              <h5 class="card-title">Haris Daniel</h5>
+              <p class="text-muted">New Customer</p>
+              <a href="profilecust2.html" class="btn btn-primary btn-sm">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body text-center">
+              <img src="images/profile4.png" alt="Customer Avatar" class="rounded-circle mb-3" width="80">
+              <h5 class="card-title">Nora Najwa</h5>
+              <p class="text-muted">Regular Customer</p>
+              <a href="profilecust4.html" class="btn btn-primary btn-sm">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+         <!-- Customer 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body text-center">
+              <img src="images/profile6.png" alt="Customer Avatar" class="rounded-circle mb-3" width="80">
+              <h5 class="card-title">Sharifah Manal</h5>
+              <p class="text-muted">New Customer</p>
+              <a href="profilecust6.html" class="btn btn-primary btn-sm">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body text-center">
+              <img src="images/profile3.png" alt="Customer Avatar" class="rounded-circle mb-3" width="80">
+              <h5 class="card-title">Adam Iman</h5>
+              <p class="text-muted">New Customer</p>
+              <a href="profilecust3.html" class="btn btn-primary btn-sm">View Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section Start -->
+  <footer class="text-white pt-4" style="background-color: #b30000;">
+    <div class="container">
+      <div class="row">
+        <!-- Branding -->
+        <div class="col-md-4 mb-3">
+          <h5 class="fw-bold">🍴 FawaFood Admin</h5>
+          <p class="small">Manage orders, customers, and menu for your online food delivery system efficiently.</p>
+        </div>
+
+        <!-- Sitemap -->
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-semibold">Sitemap</h6>
+          <ul class="list-unstyled small">
+            <li><a href="index.html" class="text-white text-decoration-none">Dashboard</a></li>
+            <li><a href="orders.html" class="text-white text-decoration-none">Orders</a></li>
+            <li><a href="menu.html" class="text-white text-decoration-none">Menu Management</a></li>
+            <li><a href="customers.html" class="text-white text-decoration-none">Customers</a></li>
+            <li><a href="reviews.html" class="text-white text-decoration-none">Reviews</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-semibold">Follow Us</h6>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="fs-5 d-inline-flex align-items-center justify-content-center rounded-circle" style="width: 30px; height: 30px; background-color: white;">
+              <i class="bi bi-youtube text-danger"></i>
+            </a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright (Black Strip) -->
+    <div class="text-center small p-3" style="background-color: black; color: white;">
+      © 2025 FawaFood Admin Panel. All rights reserved.
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+  <script src="scripts.js"></script>
+</body>
+</html>
